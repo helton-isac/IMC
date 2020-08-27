@@ -76,14 +76,14 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/backgroundBottomColor"
         android:layout_weight="0.5"
         android:padding="16dp">
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </LinearLayout>
