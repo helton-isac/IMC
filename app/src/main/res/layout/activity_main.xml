@@ -9,28 +9,28 @@
 
 
     <LinearLayout
-        android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/backgroundTopColor"
         android:layout_weight="0.5"
-        android:orientation="vertical">
+        android:background="@color/backgroundTopColor"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/title_imc"
-            android:textSize="32sp"
-            android:textStyle="bold|italic"
-            android:textColor="#FFF"
             android:textAlignment="center"
-            />
+            android:textColor="#FFF"
+            android:textSize="32sp"
+            android:textStyle="bold|italic" />
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,20 +38,19 @@
 
                 <TextView
                     style="@style/label_form_middle"
-                    android:text="Peso (Kg):"
-                    />
+                    android:text="Peso (Kg):" />
 
                 <TextView
                     style="@style/label_form_middle"
-                    android:text="Altura (m):"
-                    />
+                    android:layout_marginStart="8dp"
+                    android:text="Altura (m):" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -59,19 +58,19 @@
                     style="@style/input_form"
                     android:layout_marginEnd="8dp"
                     android:hint="65"
-                    android:maxLength="4"
-                    android:inputType="number"/>
+                    android:inputType="number"
+                    android:maxLength="4" />
 
                 <EditText
-                    android:layout_marginStart="8dp"
                     style="@style/input_form"
+                    android:layout_marginStart="8dp"
                     android:hint="1.75"
-                    android:inputType="number"/>
+                    android:inputType="number" />
             </LinearLayout>
 
             <Button
                 style="@style/button"
-                android:text="Calcular"/>
+                android:text="Calcular" />
         </LinearLayout>
 
     </LinearLayout>
@@ -79,9 +78,37 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/backgroundBottomColor"
         android:layout_weight="0.5"
+        android:background="@color/backgroundBottomColor"
         android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvIMC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seu indice é: 30"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivIMCStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvIMCStatus"
+            android:layout_below="@+id/tvIMC"
+            android:src="@drawable/masc_ideal" />
+
+        <TextView
+            android:id="@+id/tvIMCStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Peso Ideal"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
