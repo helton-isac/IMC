@@ -3,6 +3,7 @@ package com.hitg.imc
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.hitg.imc.extensions.format
 import com.hitg.imc.watchers.DecimalTextWatcher
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun configuraIMC(imc: Double, drawableId: Int, stringId: Int) {
-        tvIMC.text = getString(R.string.resultado_imc, imc)
+        tvIMC.text = getString(R.string.resultado_imc, imc.format(2))
         ivIMCStatus.setImageDrawable(
             ContextCompat.getDrawable(this, drawableId)
         )
