@@ -3,6 +3,7 @@ package com.hitg.imc
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.hitg.imc.watchers.DecimalTextWatcher
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,6 +12,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        etPeso.addTextChangedListener(DecimalTextWatcher(etPeso, 1))
+        etAltura.addTextChangedListener(DecimalTextWatcher(etAltura))
         btCalcular.setOnClickListener {
             calcular()
         }
