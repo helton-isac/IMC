@@ -10,4 +10,10 @@
     <string name="obesidade_grau_ii">Você está com Obesidade Grau II</string>
     <string name="obesidade_grau_iii">Você está com Obesidade Grau III</string>
     <string name="resultado_imc">O seu IMC é: %1$s</string>
+    <string name="peso_kg">Peso (Kg):</string>
+    <string name="altura_m">Altura (m):</string>
+    <string name="calcular">Calcular</string>
+    <string name="imagem_descritiva">Imagem descritiva.</string>
+    <string name="hint_altura">1.83</string>
+    <string name="hint_peso">95.5</string>
 </resources>
