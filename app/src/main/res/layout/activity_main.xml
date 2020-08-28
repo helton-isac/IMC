@@ -59,7 +59,7 @@
                     style="@style/input_form"
                     android:layout_marginEnd="8dp"
                     android:hint="65"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:maxLength="4" />
 
                 <EditText
@@ -67,7 +67,7 @@
                     style="@style/input_form"
                     android:layout_marginStart="8dp"
                     android:hint="1.75"
-                    android:inputType="number" />
+                    android:inputType="numberDecimal" />
             </LinearLayout>
 
             <Button

@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
     //endregion
 
-    //region Calculos
+    //region Calculation
     private fun calcular() {
         val peso = etPeso.text.toString().toDouble()
         val altura = etAltura.text.toString().toDouble()
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun configuraIMC(imc: Double, drawableId: Int, stringId: Int) {
-        tvIMC.text = "Seu IMC é: ${imc}"
+        tvIMC.text = getString(R.string.resultado_imc, imc)
         ivIMCStatus.setImageDrawable(
             ContextCompat.getDrawable(this, drawableId)
         )
