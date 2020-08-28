@@ -55,6 +55,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etPeso"
                     style="@style/input_form"
                     android:layout_marginEnd="8dp"
                     android:hint="65"
@@ -62,6 +63,7 @@
                     android:maxLength="4" />
 
                 <EditText
+                    android:id="@+id/etAltura"
                     style="@style/input_form"
                     android:layout_marginStart="8dp"
                     android:hint="1.75"
@@ -69,6 +71,7 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/btCalcular"
                 style="@style/button"
                 android:text="Calcular" />
         </LinearLayout>
